@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quienes somos - AngularJS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo2.css">
+    <style>
+      .bg-angular { background-color: #DD0031 !important; }
+      .bg-oscuro { background-color: #0d0d11 !important; }
+      .text-angular { color: #DD0031 !important; }
+      .sombra-titulo { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- HEADER -->
+      <header class="row">
+        <div class="col-2 bg-angular d-flex align-items-center justify-content-center p-2">
+          <img src="imagen1.jpg" class="img-fluid rounded-4 border border-2 border-white shadow-lg bg-white p-1" alt="AngularJS">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-angular col-10">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link text-white" href="index1.html">INICIO</a></li><li class="nav-item"><a class="nav-link text-white active fw-bold" href="quienes.html">QUIENES SOMOS</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">NOTAS</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="nota1.html">Nota 1</a></li><li><a class="dropdown-item" href="nota2.html">Nota 2</a></li><li><a class="dropdown-item" href="nota3.html">Nota 3</a></li><li><a class="dropdown-item" href="nota4.html">Nota 4</a></li></ul></li><li class="nav-item"><a class="nav-link text-white" href="contacto.html">CONTACTO</a></li>
+              </ul>
+              <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Busca tu nota favorita" aria-label="Search"/><button class="btn btn-outline-light" type="submit">Busqueda</button></form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+<!-- MIGA DE PAN -->
+      <section class="row my-3"><div class="col-12"><nav aria-label="breadcrumb"><ol class="breadcrumb mb-0 justify-content-center"><li class="breadcrumb-item"><a class="breadcrumb-link" href="index1.html">Inicio</a></li><li class="breadcrumb-item active" aria-current="page">Quiénes Somos</li></ol></nav></div></section>
+
+      <main class="row mb-5 g-4">
+        <div class="col-12 col-lg-8">
+          <article class="bg-light p-4 rounded shadow-sm h-100"><h2 class="text-uppercase fw-bold text-angular sombra-titulo mb-3">HISTORIA DE ANGULARJS</h2><img src="imagen11.jpg" class="img-fluid rounded mb-3 w-100" alt="Historia de AngularJS"><div class="mb-3"><span class="badge bg-oscuro">2009 - 2022</span></div><p><strong>ORIGEN:</strong> AngularJS nació en 2009 de la idea de Miško Hevery, ingeniero de Google, y de Adam Abrons. Hevery quería una forma más simple de crear aplicaciones web: en un proyecto interno reescribió una aplicación de unas 17.000 líneas de código en solo 1.500.</p><p><strong>Primera versión pública (20-10-2010):</strong> Se publicó la versión 0.9.0 como proyecto de código abierto. El nombre Angular viene de los símbolos &lt; &gt; del HTML, porque la propuesta era ampliar el vocabulario del HTML con atributos nuevos.</p><p><strong>AngularJS 1.0 (14-06-2012):</strong> Miško Hevery anunció en el blog de Google la versión 1.0, con un lenguaje de plantillas basado en HTML y data binding de dos vías. Desde entonces se convirtió en uno de los frameworks más usados para aplicaciones de una sola página.</p><p><strong>De AngularJS a Angular (14-09-2016):</strong> Se publicó Angular 2.0.0, una reescritura completa e incompatible con la versión anterior. Desde entonces, AngularJS es la versión 1.x y Angular es la versión 2 en adelante.</p><p><strong>Fin del soporte (31-12-2021):</strong> En 2018 se anunció el retiro gradual: el desarrollo activo terminó el 30 de junio de 2018 y la versión 1.7 pasó a soporte a largo plazo. Ese soporte se extendió seis meses por la pandemia y terminó el 31 de diciembre de 2021. La última versión estable, la 1.8.3, se publicó el 7 de abril de 2022.</p><h3 class="text-uppercase fw-bold text-angular sombra-titulo mt-4 mb-3">COMO SE INSTALA ANGULARJS</h3><p>AngularJS es una librería de JavaScript, así que no necesita un instalador: basta con cargar un archivo en tu página HTML.</p><p><strong>Opción 1: CDN de Google.</strong> Es la más rápida. Agrega esta línea antes de cerrar la etiqueta body:</p><pre class="bg-dark text-white p-3 rounded small" ng-non-bindable><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"&gt;&lt;/script&gt;</code></pre><p><strong>Opción 2: descargar el archivo.</strong> Descarga angular.min.js desde <a href="https://angularjs.org" target="_blank" rel="noopener">angularjs.org</a>, guárdalo en una carpeta de tu proyecto y enlázalo:</p><pre class="bg-dark text-white p-3 rounded small" ng-non-bindable><code>&lt;script src="js/angular.min.js"&gt;&lt;/script&gt;</code></pre><p><strong>Opción 3: npm.</strong> Si tienes Node.js, ejecuta este comando en la carpeta de tu proyecto y enlaza el archivo de node_modules:</p><pre class="bg-dark text-white p-3 rounded small" ng-non-bindable><code>npm install angular
+
+&lt;script src="node_modules/angular/angular.min.js"&gt;&lt;/script&gt;</code></pre><p><strong>Tu primera aplicación.</strong> Marca con ng-app la parte de la página que AngularJS debe controlar y usa ng-model para enlazar un campo con una variable. Escribe en el campo para probarlo:</p><div class="border rounded p-3 bg-white mb-3" ng-app=""><label for="demoNombre" class="form-label">Escribe tu nombre:</label><input type="text" id="demoNombre" class="form-control mb-2" ng-model="nombre" placeholder="Tu nombre"><p class="fw-bold mb-0">Hola {{ nombre }}</p></div><pre class="bg-dark text-white p-3 rounded small" ng-non-bindable><code>&lt;div ng-app=""&gt;
+  &lt;input type="text" ng-model="nombre"&gt;
+  &lt;p&gt;Hola {{ nombre }}&lt;/p&gt;
+&lt;/div&gt;</code></pre><h3 class="text-uppercase fw-bold text-angular sombra-titulo mt-4 mb-3">EJEMPLOS DE APLICACIONES</h3><p>AngularJS se usa en aplicaciones de una sola página, paneles de control, formularios y sitios con datos que cambian. Estos son tres ejemplos citados en artículos sobre AngularJS:</p><div class="mb-4"><div class="ratio ratio-16x9 mb-2 bg-dark rounded-0 overflow-hidden"><img src="imagen12.jpg" class="object-fit-contain w-100 h-100 rounded-0" alt="YouTube para PlayStation 3"></div><h5 class="fw-bold">1. YouTube para PlayStation 3</h5><p class="mb-0">La versión de YouTube para la consola PlayStation 3 se cita como una aplicación construida con AngularJS. Muestra que el framework sirve para interfaces de pantalla completa con mucho contenido que cambia, como listas de videos y menús.</p></div><div class="mb-4"><div class="ratio ratio-16x9 mb-2 bg-dark rounded-0 overflow-hidden"><img src="imagen13.jpg" class="object-fit-contain w-100 h-100 rounded-0" alt="Weather.com"></div><h5 class="fw-bold">2. Weather.com</h5><p class="mb-0">El sitio de pronósticos del clima se menciona como ejemplo de AngularJS. Es un caso típico: datos que cambian constantemente, como temperaturas y alertas, que el data binding muestra al instante en la página.</p></div><div class="mb-4"><div class="ratio ratio-16x9 mb-2 bg-dark rounded-0 overflow-hidden"><img src="imagen14.jpg" class="object-fit-contain w-100 h-100 rounded-0" alt="Google DoubleClick for Publishers"></div><h5 class="fw-bold">3. Google DoubleClick for Publishers</h5><p class="mb-0">La plataforma de Google para gestionar publicidad se nombra como uno de los proyectos grandes donde se usó AngularJS. Es un panel de trabajo con muchas tablas y formularios, el tipo de aplicación para la que AngularJS fue pensado.</p></div></article>
+        </div>
+        <aside class="col-12 col-lg-4 d-flex flex-column gap-4">
+          <div class="bg-light p-3 rounded shadow-sm">
+            <h4 class="text-uppercase fw-bold text-angular fs-6 border-bottom pb-2 mb-3">Enlaces de interés</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="index1.html" class="text-decoration-none">Inicio</a></li>
+              <li class="mb-2"><a href="quienes.html" class="text-decoration-none fw-bold">Quiénes Somos</a></li>
+              <li><a href="contacto.html" class="text-decoration-none">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="bg-light p-3 rounded shadow-sm">
+            <h4 class="text-uppercase fw-bold text-angular fs-6 border-bottom pb-2 mb-3">Video de YouTube</h4><div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
+<!--  VIDEO  -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4PYwCI1LFqs?si=Tjep83DxNr5CPTgp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="bg-light p-3 rounded shadow-sm">
+            <div class="d-flex align-items-center gap-2 border-bottom pb-2 mb-3">
+              <img src="imagen1.jpg" alt="Logo AngularJS" width="32" height="32"><span class="fw-bold text-angular">AngularJS en la web</span>
+            </div>
+            <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-sm bg-angular text-white fw-bold">Visitar angularjs.org</a>
+          </div>
+          <div class="bg-light p-3 rounded shadow-sm">
+            <h4 class="text-uppercase fw-bold text-angular fs-6 border-bottom pb-2 mb-3">Suscríbete para más</h4>
+            <form action="#" method="get"><fieldset>
+              <legend class="fs-6 text-muted mb-2">Deja tus datos:</legend>
+              <div class="mb-2"><label for="nombre" class="form-label mb-1">Nombre:</label><input type="text" class="form-control form-control-sm" id="nombre" name="nombre" placeholder="Tu nombre"></div>
+              <div class="mb-3"><label for="email" class="form-label mb-1">Email:</label><input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="correo@ejemplo.com"></div>
+              <button type="button" class="btn btn-sm bg-oscuro text-white fw-bold w-100">Enviar</button>
+            </fieldset></form>
+          </div>
+        </aside>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="row text-center text-white mt-4">
+        <section class="col-12 col-md-4 bg-angular p-3 d-flex flex-column justify-content-between rounded-0">
+          <h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">Quienes somos</h4>
+          <div class="ratio ratio-16x9 text-white p-3 text-start overflow-y-auto rounded shadow-sm">
+            <p class="m-0">AngularJS es un framework de JavaScript creado por Miško Hevery y publicado por primera vez en 2010. Permite construir aplicaciones web de una sola página con data binding, directivas e inyección de dependencias. Su versión 1.0 salió en 2012 y su soporte oficial terminó el 31 de diciembre de 2021.</p>
+          </div>
+        </section>
+        <section class="col-12 col-md-4 bg-oscuro p-3 d-flex flex-column justify-content-between rounded-0">
+          <h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">VIDEO</h4><div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
+<!--  VIDEO  -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4PYwCI1LFqs?si=Tjep83DxNr5CPTgp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section class="col-12 col-md-4 bg-angular p-3 d-flex flex-column justify-content-between rounded-0">
+          <h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">MAPA</h4><div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
+<!--  MAPA  -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6368171322733!2d-122.08789912370872!3d37.42205833239852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1ses!2sbo!4v1795650836242!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  </body>
+</html>

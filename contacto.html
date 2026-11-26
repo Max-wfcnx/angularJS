@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - AngularJS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo2.css">
+    <style>
+      .bg-angular { background-color: #DD0031 !important; }
+      .bg-oscuro { background-color: #000000 !important; }
+      .text-angular { color: #DD0031 !important; }
+      .sombra-titulo { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- HEADER -->
+      <header class="row">
+        <div class="col-2 bg-angular d-flex align-items-center justify-content-center p-2">
+          <img src="imagen1.jpg" class="img-fluid rounded-4 border border-2 border-white shadow-lg bg-white p-1" alt="AngularJS">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-angular col-10">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link text-white" href="index1.html">INICIO</a></li><li class="nav-item"><a class="nav-link text-white" href="quienes.html">QUIENES SOMOS</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">NOTAS</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="nota1.html">Nota 1</a></li><li><a class="dropdown-item" href="nota2.html">Nota 2</a></li><li><a class="dropdown-item" href="nota3.html">Nota 3</a></li><li><a class="dropdown-item" href="nota4.html">Nota 4</a></li></ul></li><li class="nav-item"><a class="nav-link text-white active fw-bold" href="contacto.html">CONTACTO</a></li>
+              </ul>
+              <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Busca tu nota favorita" aria-label="Search"/><button class="btn btn-outline-light" type="submit">Busqueda</button></form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+<!-- MAIN Miga de pan -->
+      <main class="row text-center"><section class="row my-3"><div class="col-12"><nav aria-label="breadcrumb"><ol class="breadcrumb mb-0"><li class="breadcrumb-item"><a class="breadcrumb-link" href="index1.html">Inicio</a></li><li class="breadcrumb-item active" aria-current="page">Contacto</li></ol></nav></div></section></main>
+
+      <!-- MAPA -->
+      <section class="row mb-4"><h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">MAPA</h4><div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
+<!--  MAPA  -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6368171322733!2d-122.08789912370872!3d37.42205833239852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1ses!2sbo!4v1795650836242!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</section>
+
+      <section class="row mb-5">
+        <div class="col-12 col-md-6 p-4 bg-light rounded shadow-sm mb-3 mb-md-0">
+          <h3 class="text-uppercase fw-bold mb-3 text-center text-angular sombra-titulo">Formulario de Contacto</h3>
+          <form>
+            <div class="mb-3"><label for="nombre" class="form-label">Nombre Completo</label><input type="text" class="form-control" id="nombre" placeholder="Tu nombre"></div>
+            <div class="mb-3"><label for="telefono" class="form-label">Teléfono</label><input type="tel" class="form-control" id="telefono" placeholder="Tu número de teléfono"></div>
+            <div class="mb-3"><label for="email" class="form-label">Correo Electrónico</label><input type="email" class="form-control" id="email" placeholder="name@example.com"></div>
+            <div class="mb-3"><label for="direccion" class="form-label">Dirección</label><input type="text" class="form-control" id="direccion" placeholder="Tu dirección"></div>
+            <div class="mb-3"><label for="comentarios" class="form-label">Comentarios o Mensaje</label><textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea></div>
+            <div class="text-center"><button type="submit" class="btn text-white px-5 fw-bold bg-angular">Enviar Mensaje</button></div>
+          </form>
+        </div>
+        <div class="col-12 col-md-6 p-4 d-flex flex-column justify-content-between">
+          <div>
+            <h3 class="text-uppercase fw-bold text-decoration-underline mb-3 text-center text-angular sombra-titulo">Información de Contacto</h3>
+            <p>¿Tienes dudas sobre AngularJS, su instalación o sus ejemplos? Escríbenos y responderemos lo antes posible.</p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><strong>Equipo:</strong> Centro de Ayuda AngularJS</li>
+              <li class="mb-2"><strong>Dirección:</strong> Av. Innovación 123, Edificio Web, Oficina 4</li>
+              <li class="mb-2"><strong>Teléfono:</strong> +591 2 555 0100</li>
+              <li class="mb-2"><strong>Correo:</strong> ayuda@angularjs-centro.example</li>
+              <li class="mb-2"><strong>Horarios:</strong> Lunes a Viernes de 9:00 AM a 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="row text-center text-white mt-4">
+        <section class="col-12 col-md-4 bg-angular p-3 d-flex flex-column justify-content-between rounded-0">
+          <h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">Quienes somos</h4>
+          <div class="ratio ratio-16x9 text-white p-3 text-start overflow-y-auto rounded shadow-sm">
+            <p class="m-0">AngularJS es un framework de JavaScript creado por Miško Hevery y publicado por primera vez en 2010. Permite construir aplicaciones web de una sola página con data binding, directivas e inyección de dependencias. Su versión 1.0 salió en 2012 y su soporte oficial terminó el 31 de diciembre de 2021.</p>
+          </div>
+        </section>
+        <section class="col-12 col-md-4 bg-oscuro p-3 d-flex flex-column justify-content-between rounded-0">
+          <h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">VIDEO</h4><div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
+<!--  VIDEO  -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4PYwCI1LFqs?si=Tjep83DxNr5CPTgp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section class="col-12 col-md-4 bg-angular p-3 d-flex flex-column justify-content-between rounded-0">
+          <h4 class="text-uppercase fw-bold text-decoration-underline sombra-titulo">MAPA</h4><div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
+<!-- MAPA   -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6368171322733!2d-122.08789912370872!3d37.42205833239852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1ses!2sbo!4v1795650836242!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+      </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  </body>
+</html>
